@@ -5,11 +5,13 @@
 
 using namespace std;
 
+//esta funcionando, porém gostaria de uma resposta para quando nao tem nenhum valor que é igual a média
+
 int main() {
 	
 	setlocale(LC_ALL, "Portuguese");
 	
-	float soma, final;
+	float soma, final, j=0;
 	int i, conj[10];
 	
 	cout << "EXERCÍÍO 3" << endl;
@@ -25,11 +27,19 @@ int main() {
 
 		cout << endl << "A média dos conjuntos é: " << final << endl;
 		
-		for(i=0; i<10; i++){
-			if(final==conj[i]){
-				cout << "o valor da posição " << i+1 << " é igual a média de todos os conjuntos" << endl;
-			}
+	for(i=0; i<10; i++){
+		if(final==conj[i]){
+			cout << "o valor da posição " << i+1 << " é igual a média de todos os conjuntos" << endl;
+		}else{
+			j=1;
 		}
+	}
+	
+	if(j==1){
+		cout << endl;
+		cout << "Nenhum dos outros valores inseridos é igual ao valor da média" << endl;
+	}
+		
 	
 	return 0;
 }
