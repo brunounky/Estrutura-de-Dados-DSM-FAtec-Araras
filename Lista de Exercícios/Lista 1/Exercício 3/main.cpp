@@ -9,8 +9,8 @@ int main() {
 	
 	setlocale(LC_ALL, "Portuguese");
 	
-	int soma, i, conj[10];
-	float final;
+	float soma, final;
+	int i, conj[10];
 	
 	cout << "EXERCÍÍO 3" << endl;
 	
@@ -27,7 +27,7 @@ int main() {
 		
 		for(i=0; i<10; i++){
 			if(final==conj[i]){
-				cout << "o valor da posição: " << i+1 << " é igual a média de todos os conjuntos" << endl;
+				cout << "o valor da posição " << i+1 << " é igual a média de todos os conjuntos" << endl;
 			}
 		}
 	
