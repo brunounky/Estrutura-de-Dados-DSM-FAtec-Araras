@@ -12,7 +12,7 @@ int main() {
 	
 	cout << "EXERCICIO 4" << endl;
 	
-	char t[3];
+	char t[3], sim, nao;
 	
 	cout << "Digite SIM ou NAO para receber um retorno: " << endl;
 	cin >> t;
