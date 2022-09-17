@@ -6,16 +6,21 @@
 using namespace std;
 
 int main() {
-
-	int x=1;
+	
+	setlocale(LC_ALL, "Portuguese");
+	
+	int i, resultado, t1, t2;
 	
 	printf("\t TABUADA DO 1 AO 9 \n");
 	
-	for(int i=1; i<=10; i++){
+	for(int i=0; i<10; i++){
 		
-		printf("resultado: \n", i, x, i*x);
+	scanf("%i%i", &t1, &t2);
 		
-		nao consegui terminarrrrr
+	resultado=t1*t2;
+		
+	printf( "\n 1*%i=",resultado);
+		
 	}
 	
 	return 0;
