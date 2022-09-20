@@ -5,8 +5,6 @@
 
 using namespace std;
 
-//esta funcionando, porém gostaria de uma resposta para quando nao tem nenhum valor que é igual a média
-
 int main() {
 	
 	setlocale(LC_ALL, "Portuguese");
