@@ -1,25 +1,23 @@
 #include <iostream>
 #include <locale>
 #include <cmath>
+#include <stdlib.h>
 #include <stdio.h>
 
 using namespace std;
 
-int main() {
+int main(void) {
 	
 	setlocale(LC_ALL, "Portuguese");
 	
-	int i, resultado, t1, t2;
+	int i;
+	int k=1;
 	
 	printf("\t TABUADA DO 1 AO 9 \n");
 	
 	for(int i=0; i<10; i++){
 		
-	scanf("%i%i", &t1, &t2);
-		
-	resultado=t1*t2;
-		
-	printf( "\n 1*%i=",resultado);
+	printf( "\n 1*%i=", i+1*k+1);
 		
 	}
 	
