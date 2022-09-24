@@ -15,7 +15,7 @@ void quadrado_por_referencia(int *);
 
 int quadrado_por_valor(int num1)
 {
-	int aux;	
+	int aux;
 	num1 = pow(num1,2);
 	//cout << num1;
 	return num1;
