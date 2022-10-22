@@ -18,7 +18,20 @@ void verificaImparPar(int num){
 
 void verificaPrimo(int num){
 	
-	//Verifica se o número é 
+	int i;
+	int qtdDivisao=0;
+	
+	for(i=1; i <= num; i++){
+		if(num % i == 0){
+			qtdDivisao++;	
+		}
+	}
+	
+	if(qtdDivisao==2){
+		cout << endl << num << " é primo" << endl;
+	}else{
+		cout << endl << num << " não é primo" << endl;
+	}
 }
 
 int main() {
@@ -31,6 +44,7 @@ int main() {
 	cin >> num;
 	
 	verificaImparPar(num);
+	verificaPrimo(num);
 	
 	
 	return 0;
