@@ -3,6 +3,7 @@
 #include <cmath>
 #include <stdio.h>
 
+//Lista 1 - Exercício 9
 
 using namespace std;
 
@@ -33,7 +34,7 @@ int verificadorMaMe(int i, float vetor[10]){
 
 int main() {
 	
-	cout << "Informe os valores para compor o vetor: " << endl;
+	cout << "Informe os 10 valores para compor o vetor: " << endl;
 	
 	float vetor[10];
 	int i;
