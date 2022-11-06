@@ -8,13 +8,13 @@ using namespace std;
 int main()
 {
   int x,y;
-  for(x=2; x <= 10; x++)
+  for(x=1; x <= 9; x++)
   {
      for(y=1; y <= 10; y++) {
         if (y == 10) {
-           cout << x << "  * " << y << "  = " << x*y << endl;
+           cout << x << "  * " << y << "  = " << x*y << " |  ";
         } else {
-           cout << x << "  *  " << y << "  = " << x*y << endl;
+           cout << x << "  *  " << y << "  = " << x*y << "  |  ";
         }
      }
      cout << endl;
