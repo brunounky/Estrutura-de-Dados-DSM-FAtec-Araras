@@ -25,6 +25,7 @@ void qualTipo(){
 	int i, j;
 	pontosTriangulo1 PontosTriangulo1;
 	pontosTriangulo1 PontosTriangulo2;
+	double cat1, cat2, elev1, elev2, soma, raiz[3];
 	
 	cout << "Qual o tipo de triângulo" << endl;
 	
@@ -50,17 +51,10 @@ void qualTipo(){
 			cin >> PontosTriangulo2.y[i];	
 	}
 	
-	for(i=1; i<=3; i++){
-	cout << PontosTriangulo1.x[i] << endl;
-	cout << PontosTriangulo1.y[i] << endl;
-	}
+	j=1;
 	
-	for(j=1; j<=3; j++){
-	cout << PontosTriangulo2.x[j] << endl;
-	cout << PontosTriangulo2.y[j] << endl;
-	}
-	
-	
+	//falta fazer a verificação de tipo de triangulo
+			
 }
 
 
