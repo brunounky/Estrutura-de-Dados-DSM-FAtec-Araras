@@ -3,6 +3,7 @@
 #include <cmath>
 #include <stdio.h>
 
+//Lista 1 - Exercício 10
 
 using namespace std;
 
