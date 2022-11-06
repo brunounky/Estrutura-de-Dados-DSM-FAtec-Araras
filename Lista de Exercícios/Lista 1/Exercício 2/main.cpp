@@ -2,6 +2,9 @@
 #include <locale>
 #include <cmath>
 #include <stdio.h>
+#include <cstring>
+
+//Lista 1 - Exercício 2
 
 using namespace std;
 
