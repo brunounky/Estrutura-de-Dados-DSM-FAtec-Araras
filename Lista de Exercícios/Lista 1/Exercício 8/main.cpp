@@ -3,19 +3,50 @@
 #include <cmath>
 #include <stdio.h>
 
+//Lista 1 - Exercício 8
 
 using namespace std;
+
+float crescente(float vetor[]){
+	
+	int i;
+
+	cout << "Ordenação de forma crescente dos números digitados: " << endl;
+	
+	for(i=0; i<10; i++){
+		
+		cout << vetor[i] << endl;
+		
+	}
+	
+	return vetor[i];
+	
+}
+
+float decrescente(float vetor[]){
+	
+	int i;
+	
+	cout << "Ordenação de forma decrescente dos números digitados: " << endl;
+	
+	for(i=91; i>-1; i--){
+		
+		cout << vetor[i] << endl;
+		
+	}
+	
+}
 
 int main() {
 	
 	setlocale(LC_ALL, "Portuguese");
 	
 	float vetor[10];
-	int i, resp;
+	int i, resp, j, aux;
 	
-	cout << "Informe os valores desejados: " << endl;
+	cout << "Informe os 10 valores desejados: " << endl;
 	
-	for(i=0; i<=10; i++){
+	for(i=0; i<10; i++){
 		cin >> vetor[i];
 	}	
 	
@@ -24,11 +55,25 @@ int main() {
 	cout << "2 - Decrescente" << endl;
 	cin >> resp;
 	
+		for(j=10-1; j>=1; j--){
+			for(i=0; i<j; i++){
+				if(vetor[i] > vetor[i+1]){
+					aux = vetor[i];
+					vetor[i] = vetor[i+1];
+					vetor[i+1] = aux;
+				}
+			}
+		}
+	
 	if(resp==1){
-		//funcao de crescente
+		
+		crescente(vetor);
+		
 	}else{
 		if(resp==2){
-		//FUUNCAO DE DECRESCENTE
+		
+		decrescente(vetor);
+		
 		}else{
 		cout << "Resposta fora do esperado" << endl;
 		}
