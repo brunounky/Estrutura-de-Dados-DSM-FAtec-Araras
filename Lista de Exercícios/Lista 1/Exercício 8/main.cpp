@@ -29,11 +29,13 @@ float decrescente(float vetor[]){
 	
 	cout << "Ordenação de forma decrescente dos números digitados: " << endl;
 	
-	for(i=91; i>-1; i--){
+	for(i=9; i>-1; i--){
 		
 		cout << vetor[i] << endl;
 		
 	}
+	
+	return vetor[i];
 	
 }
 
