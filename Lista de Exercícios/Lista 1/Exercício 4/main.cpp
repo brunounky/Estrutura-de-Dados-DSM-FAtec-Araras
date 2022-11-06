@@ -8,14 +8,30 @@
 
 using namespace std;
 
-void retorno(char t){
+void verifica(char t[]){
 	
-	if(t == 's'){
+	char s[4];
+   	char n[4];
+	int verif, verif1;
+	
+	strcpy(s, "SIM");
+   	strcpy(n, "NAO");
+	
+	verif = strcmp(t, s);
+	verif1 = strcmp(t, n);
+		
+	if(verif == 0){
 		cout << "Retorno: 1" << endl;
-	}if(t == 'n'){
-		cout << "Retorno: 0" << endl;
 	}else{
-		cout << "Você não digitou uma das opções possíveis" << endl;
+		
+		if(verif1 == 0){
+		cout << "Retorno: 0" << endl;
+		}else{
+			
+			cout << "Você não digitou uma das opções possíveis" << endl;
+			
+		}
+	
 	}
 	
 }
@@ -24,14 +40,15 @@ int main() {
 	
 	setlocale(LC_ALL, "Portuguese");
 	
+	char t[4];
+	
 	cout << "EXERCICIO 4" << endl;
 	
-	char t;
-	
-	cout << "Digite SIM ou NAO para receber um retorno: " << endl;
+	cout << "Digite SIM ou NAO para receber um retorno(OBS: Maiúsculo): " << endl;
 	cin >> t;
 	
-	retorno(t);
+	verifica(t);
+	
 	
 	return 0;
 }
