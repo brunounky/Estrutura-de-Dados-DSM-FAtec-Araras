@@ -3,7 +3,7 @@
 #include <cmath>
 #include <stdio.h>
 
-//Lista 2 - Exercício 1
+//Lista 2 - Exercício 1 NAO ESTA FUNCIONANDO
 
 
 using namespace std;
@@ -15,6 +15,11 @@ struct contaCorrente{
 	float valorConta;
 	
 };
+
+//void ordenar(contaCorrente Contas[]){
+
+	
+//}
 
 void cadastrarContas(){
 	
@@ -42,6 +47,8 @@ for(i=1; i<=5; i++){
 	
 	}
 	
+//	ordenar(Contas);
+	
 		for(i=1; i <=5; i++){
 		
 		cout << "______________________________________________" << endl;
@@ -50,6 +57,24 @@ for(i=1; i<=5; i++){
 		cout << "Valor na conta do correntista " << i << " : " << "R$" << Contas[i].valorConta << endl; 
 		
 	}
+	
+	int aux[5];
+	float trans[5], trans1[5];
+	
+	for(i=1; i<=5; i++ ){
+		for(trans1[i]=trans[i]+1; trans1[i]<10; i++){
+			if(trans[i]>trans1[i]){
+				aux[i] = i;
+				trans[i] = trans1[i];
+				trans1[i] = aux[i];
+			}
+		}
+	}
+	
+	for(i=1; i<=5; i++){
+		cout << trans[i] << endl;
+	}
+	
 	
 }
 

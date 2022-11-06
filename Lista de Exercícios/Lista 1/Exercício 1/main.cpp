@@ -17,7 +17,7 @@ int main()
         if (y == 10) {
            cout << x << "  * " << y << "  = " << x*y << " |  ";
         } else {
-           cout << x << "  *  " << y << "  = " << x*y << "  |  ";
+           cout << x << "  * " << y << "  = " << x*y << " |  ";
         }
      }
      cout << endl;
